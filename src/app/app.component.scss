@@ -1,3 +1,106 @@
-.button {
+.header {
+    height: 80px;
+    color: white;
+    background-color: #4b565e;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-item {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.header-logo {
+    margin-right: 20px;
+}
+
+// Правая сторона шапки
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+   margin-right: 5px; 
+}
+
+.phone1 {
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.heart1 {
+    margin-right: 35px;
+}
+
+.frame3-button {
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f0b94d;
+    background-color: #4b565e;
+    border-radius: 20px;
     color: beige;
 }
+
+// Нижняя часть
+
+.light {
+    height: 48px;
+    background-color: #f0b94d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+.light-left {
+    display: flex;
+    align-items: center;
+}
+
+.light-nav {
+    display: flex;
+    align-items: center;
+}
+
+.light-nav1 {
+    margin-right: 20px;
+    align-items: center;
+    font-size: 12px;
+}
+
+// нижняя часть правая сторона
+
+.light-right {
+    display: flex;
+    align-items: center;
+}
+
+.light-right-poisk {
+    margin-right: 0px;
+}
+
+.light-right-mosk {
+    font-size: 10px;
+    color: beige;
+}
+
+.search {
+    font-size: 12px;
+}
+
