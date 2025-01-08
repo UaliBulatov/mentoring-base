@@ -5,10 +5,12 @@
                 <img src="/assets/Frame.svg" alt="image">
             </div>
             <nav class="header-nav">
-                <div class="header-nav-item">Главная</div>
-                <div class="header-nav-item">О компании</div>
-                <div class="header-nav-item">Каталог</div>
+                <div class="header-nav-item">{{headerItem1}}</div>
+                <div class="header-nav-item">{{aboutCompany}}</div>
+                <div class="header-nav-item" *ngIf = 'isShowCatalog'>{{headerItem3}}</div>
             </nav>
+            <button (click) = 'isShowCatalog = !isShowCatalog'>Скрыть/Показать каталог</button>
+            <button (click) = 'changeMenyText()'>Изменить текст</button>
         </div>
     </div>
     <div class="header-right">
@@ -34,19 +36,14 @@
         </div>
         <div >
             <nav class="light-nav">
-                <div class="light-nav1">Каталог</div>
-                <div class="light-nav1">Стройматериалы</div>
-                <div class="light-nav1">Инструменты</div>
-                <div class="light-nav1">Электрика</div>
-                <div class="light-nav1">Интерьер и одежда</div>
-                
+                <div class="light-nav1" *ngFor = 'let item of menyItems'>{{item}}</div>
             </nav>
         </div>
     </div>
     <div class="light-right">
         <div class="search-container">
             <span class="search-container-text">
-                Поиск например, Круг зачистной
+                Поиск например, круг зачистной
             </span>
             <div class="lupa">
                 <img src="/assets/лупа.svg" alt="">
@@ -58,7 +55,8 @@
     </div>
 
 </div>
-<div class="big-portrait">
+<button (click) = 'bigCartina = !bigCartina'>Скрыть/Показать картину</button>
+<div class="big-portrait" *ngIf = bigCartina>
     <img src="\assets\Rectangle 5.png" alt="big-portrait" style="width: 100%;">
 </div>
 <div class="content-conteiner">
@@ -104,11 +102,7 @@
     </div>
     <div class="group1">
         <div class="numbers">
-            <button class="numbers__button">1</button>
-            <button class="numbers__button">2</button>
-            <button class="numbers__button">3</button>
-            <button class="numbers__button">4</button>
-            <button class="numbers__button">5</button>
+                <button *ngFor = 'let item2 of newPages' class="numbers__button">{{item2}}</button>
         </div>
         <div class="blok">
             <div class="blok1">
