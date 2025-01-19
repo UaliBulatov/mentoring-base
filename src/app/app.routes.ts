@@ -5,6 +5,9 @@ import { HeaderComponent } from './header/header.component';
 
 export const routes: Routes = [
   {
+    path: '', redirectTo: 'header', pathMatch: 'full'
+  },
+  {
     path: 'users',
     component: UsersListComponent,
     pathMatch: 'full'
@@ -12,9 +15,6 @@ export const routes: Routes = [
   {
     path: 'header',
     component: HeaderComponent
-  },
-  {
-    path: '', redirectTo: 'header', pathMatch: 'full'
   }  
 ];
 

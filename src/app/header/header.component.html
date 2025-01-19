@@ -10,8 +10,8 @@
                 <div class="header-nav-item" routerLink="/users">Пользователи</div>
                 <div class="header-nav-item" *ngIf = 'isShowCatalog'>{{headerItem3}}</div>
             </nav>
-            <button (click) = 'isShowCatalog = !isShowCatalog'>Скрыть/Показать каталог</button>
-            <button (click) = 'changeMenyText()'>Изменить текст</button>
+            <button type="button" (click) = 'isShowCatalog = !isShowCatalog'>Скрыть/Показать каталог</button>
+            <button type="button" (click) = 'changeMenyText()'>Изменить текст</button>
         </div>
     </div>
     <div class="header-right">

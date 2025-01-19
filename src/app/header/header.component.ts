@@ -3,8 +3,6 @@ import { Component } from "@angular/core";
 import { RouterModule } from "@angular/router";
 // import { RouterOutlet } from "@angular/router";
 
-
-
 @Component({
     selector: 'app-header',
     standalone: true,
@@ -14,18 +12,11 @@ import { RouterModule } from "@angular/router";
 })
 export class HeaderComponent {
     isShowCatalog = true;
-
-
     menyItems = ['Каталог', 'Стройматериалы', 'Инструменты', 'Электрика', 'Интерьер и одежда'];
-  
-    isUpperCase = true;
-
+      isUpperCase = true;
     readonly headerItem1 = 'Главная';
-
     readonly aboutCompany = 'О компании';
-
     readonly headerItem3 = 'Каталог';
-
     changeMenyText() {
         this.menyItems = this.menyItems.map(
             item => this.isUpperCase ? item.toLowerCase() : item.toUpperCase()
