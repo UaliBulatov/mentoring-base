@@ -16,9 +16,6 @@ const upperCaseMenyItems = menyItems.map (
   }
 )
  
-
-
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -29,7 +26,6 @@ const upperCaseMenyItems = menyItems.map (
 export class AppComponent {
   title = 'mentoring-first'; 
 
-  
   newPages = newPages;
 
   bigCartina = true;
@@ -41,10 +37,7 @@ export class AppComponent {
   readonly aboutCompany = item;
 
   readonly headerItem3 = 'Каталог';
-
-
   menyItems = upperCaseMenyItems
-
   isUpperCase = true;
 
   changeMenyText() {
