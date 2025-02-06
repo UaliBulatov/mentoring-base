@@ -1,6 +1,6 @@
 
 <div style="display: flex; width: 100%; flex-wrap: wrap;">
-    <div class="todoComponent" *ngFor = "let todo of todos">
+    <div class="todoComponent" *ngFor = "let todo of todosService.todosSubject$ | async">
         <app-todo-card [todo]="todo" (deleteTodo)="deleteTodo($event)"></app-todo-card>
     </div>
 </div>
